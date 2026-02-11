@@ -1,0 +1,88 @@
+:root { 
+  --bg: #bffcba; 
+  --card: #ffffff; 
+  --text: #111827; 
+  --muted: #6b7280; 
+  --primary: #a990b5d4; 
+  --danger: #dc2626; 
+  --ok: #16a34a; 
+  --space: 16px; 
+  --radius: 12px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: calc(var(--space) * 2) var(--space);
+}
+
+.card {
+  background: var(--card);
+  padding: var(--space);
+  border-radius: var(--radius);
+  margin-bottom: var(--space);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-danger {
+  background: var(--danger);
+}
+
+.success {
+  color: var(--ok);
+}
+
+.error {
+  color: var(--danger);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
